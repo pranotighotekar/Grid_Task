@@ -1,0 +1,69 @@
+body {
+    margin: 100px;
+  }
+  
+  .sections {
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: [col] 100px [col] 100px [col] 100px [col] 100px  ;
+      grid-template-rows: [row] auto [row] auto [row] ;
+      background-color: #fff;
+      color: #000000;
+    }
+  
+    .box {
+      background-color: #727272;
+      color: #fff;
+      padding: 20px;
+      border-radius: 3px;
+    }
+  
+    .a {
+      grid-column: col 1/ span 2;
+      grid-row: row 1;
+    }
+
+    .b {
+      grid-column: col 3 / span 2 ;
+      grid-row: row 1;
+    }
+
+    .c {
+      grid-column: col 1;
+      grid-row: row 2 ;
+    }
+
+    .d {
+      grid-column: col 2 / span 3 ;
+      grid-row: row 2 ;
+    }
+  
+    .e {
+      grid-column: col 1/ span 4;
+      grid-row: row 3;
+    }
+
+    .f {
+        grid-column: col 1 / span 2;
+        grid-row: row 1;
+      }
+
+    .g {
+        grid-column: col 3 ;
+        grid-row: row 1 /span 2 ;
+      }
+
+    .h {
+        grid-column: col 1 ;
+        grid-row:row 2 ;
+      }
+
+    .i {
+        grid-column: col 2;
+        grid-row: row 2;
+      }
+
+    .j {
+        grid-column: col 4 / span 1;
+        grid-row: row 1 / span 2;
+      }
